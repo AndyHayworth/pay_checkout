@@ -14,11 +14,15 @@ interface PaymentDetailsProps {
   onBack?: () => void
 }
 
+type FormData = {
+  [key: string]: string;
+}
+
 export default function PaymentDetails({ onBack }: PaymentDetailsProps) {
   const router = useRouter()
   const [paymentMethod, setPaymentMethod] = useState<'card' | 'ach'>('card')
   const [country, setCountry] = useState<string>('')
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     email: '',
     fullName: '',
     cardNumber: '',
@@ -277,4 +281,3 @@ export default function PaymentDetails({ onBack }: PaymentDetailsProps) {
     </div>
   )
 }
-

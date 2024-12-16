@@ -1,3 +1,5 @@
+'use client'
+
 import Logo from './Logo'
 import SubscriptionSelector from './SubscriptionSelector'
 import PriceBreakdown from './PriceBreakdown'
@@ -31,4 +33,3 @@ export default function OrderDetails({ onContinue, subscriptionType, onSubscript
     </div>
   )
 }
-

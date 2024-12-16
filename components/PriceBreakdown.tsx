@@ -1,3 +1,5 @@
+'use client'
+
 import { Separator } from '@/components/ui/separator'
 
 interface PriceBreakdownProps {
@@ -43,4 +45,3 @@ export default function PriceBreakdown({ subscriptionType, className }: PriceBre
     </div>
   )
 }
-

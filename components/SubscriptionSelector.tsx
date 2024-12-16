@@ -17,4 +17,3 @@ export default function SubscriptionSelector({ selectedPlan, onPlanChange }: Sub
     </Tabs>
   )
 }
-

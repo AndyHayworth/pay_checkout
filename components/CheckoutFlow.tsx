@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import OrderDetails from './OrderDetails'
-import PaymentDetails from './PaymentDetails'
+import OrderDetails from '@/components/OrderDetails'
+import PaymentDetails from '@/components/PaymentDetails'
 
 export default function CheckoutFlow() {
   const [currentStep, setCurrentStep] = useState('order')
@@ -23,4 +23,3 @@ export default function CheckoutFlow() {
     </div>
   )
 }
-
