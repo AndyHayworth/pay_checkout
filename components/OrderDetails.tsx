@@ -1,6 +1,6 @@
 'use client'
 
-import Logo from './Logo'
+
 import SubscriptionSelector from './SubscriptionSelector'
 import PriceBreakdown from './PriceBreakdown'
 import { Button } from '@/components/ui/button'
@@ -15,7 +15,6 @@ export default function OrderDetails({ onContinue, subscriptionType, onSubscript
   return (
     <div className="min-h-screen flex flex-col justify-center px-0 md:px-4 lg:px-6 mx-0">
       <div className="flex-col items-start text-left px-4 md:px-0 w-full md:w-auto">
-        <Logo />
         <div className="w-full">
           <SubscriptionSelector 
             selectedPlan={subscriptionType} 
